@@ -5,14 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class XPathDemo{
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
 
-        ChromeDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
-        driver.get("https://www.facebook.com");
-
-        // What is absolute xpath?
-        // Relative xpath
+        ChromeDriver driver = new ChromeDriver();  // Browser launch
+        Thread.sleep(3000);
+        driver.get("https://www.facebook.com");   // Application launch
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("test@test.com");
 
     }

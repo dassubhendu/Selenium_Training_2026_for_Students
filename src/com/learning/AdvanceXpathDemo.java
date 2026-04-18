@@ -7,7 +7,7 @@ public class AdvanceXpathDemo {
 
     public static void main(String[] args){
         ChromeDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
+        //driver.get("https://www.google.com");
 
         driver.get("https://www.facebook.com/");
 
@@ -28,6 +28,7 @@ public class AdvanceXpathDemo {
 
         // following-sibling() with password field
         //input[@name='pass']/following-sibling::label
+        //input[@name='pass']/following-sibling::label[text()='Password']
 
         // preceding-sibling() with password field
         // label[text()='Password']/preceding-sibling::input
@@ -35,11 +36,6 @@ public class AdvanceXpathDemo {
         // and & or operator - example with
         //input[@name='email' and @id='_R_64qjbjb9pb6amH1_']
         //input[@name='email' or @id='_R_64qjbjb9pb6amH1_']
-
-
-
-
-
 
     }
 
